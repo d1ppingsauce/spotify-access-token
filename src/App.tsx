@@ -34,10 +34,6 @@ const App = () => {
     return await result.json()
   }
 
-  useEffect(() => {
-    console.log(displayToken)
-  }, [displayToken])
-
   return (
     <div className='App'>
       {!code ? (
