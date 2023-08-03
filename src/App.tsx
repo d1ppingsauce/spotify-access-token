@@ -6,7 +6,6 @@ const App = () => {
     const clientId = import.meta.env.VITE_CLIENT_ID
     const params = new URLSearchParams(window.location.search)
     const code = params.get('code')
-    const [profile, setProfile] = useState()
     const [refreshToken, setRefreshToken] = useState('')
     const [accessToken, setAccessToken] = useState('')
     const [displayToken, setDisplayToken] = useState('')
