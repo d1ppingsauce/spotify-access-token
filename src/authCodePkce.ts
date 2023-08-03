@@ -31,8 +31,8 @@ export const getAccessToken = async (clientId: string, code: string) => {
     body: params,
   })
 
-  const { access_token } = await result.json()
-  return access_token
+  const { access_token, refresh_token } = await result.json()
+  return [access_token, refresh_token]
 }
 
 const generateCodeVerifier = (length: number) => {
